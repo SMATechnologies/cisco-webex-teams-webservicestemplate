@@ -1,0 +1,24 @@
+{
+  "templateid" : "Cisco_Webex_Teams",
+  "steps" : [ {
+    "function" : "POST",
+    "url" : "https://api.ciscospark.com/v1/webhooks/incoming/<incoming_webhook_url>",
+    "proxyServer" : null,
+    "request" : {
+      "headers" : [ ],
+      "contentType" : "application/json",
+      "body" : "{\"text\" : \"[[JI.MESSAGE]] from OpCon\"}",
+      "fileName" : null
+    },
+    "response" : {
+      "contentType" : "application/json",
+      "variables" : [ ],
+      "ignoreResult" : false,
+      "stepCompletionCode" : 200,
+      "responseDataCheck" : null,
+      "fileName" : null
+    }
+  } ],
+  "variables" : [ ],
+  "properties" : [ ]
+}

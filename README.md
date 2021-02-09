@@ -1,16 +1,22 @@
-# Project Name
-Project description
+# Cisco Webex Teams messages from OpCon
+Web Services template to send information from OpCon to Cisco Webex Teams spaces using an incoming webhook.
+
+# Prerequisites
+* Cisco Webex Teams spaces that support webhooks
+* OpCon Release 18.3+
+* OpCon Web Services connector / subtype
+
+# Instructions
+<a href="https://apphub.webex.com/teams/applications/incoming-webhooks-cisco-systems-38054">Here</a> is a link to information from the Cisco website about incoming webhooks.
+
+Import the template into a Web Services job in OpCon, you will need to update the URL to your environment.  You will also need to pass a "MESSAGE" job instance property with a value when calling this job.
+
+There are many applications for this example but a common use case would be to send a Cisco Webex message when an OpCon job fails. One way to set this up would be to create a trigger in Notification Manager when a job fails. The trigger would execute a "Run Command" option and pass the necessary information about the failed job to the Web Services connector.
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
-
-# Prerequisites
-
-
-# Instructions
-
 
 # License
 Copyright 2019 SMA Technologies
